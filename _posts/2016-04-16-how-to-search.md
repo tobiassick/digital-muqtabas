@@ -2,7 +2,7 @@
 layout: post
 title: "How to search digital muqtabas"
 author: Till Grallert
-date: 2016-04-16 16:16:54 GMT+3
+date: 2016-04-16
 categories: blog
 tags:
 - webview
