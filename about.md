@@ -217,7 +217,7 @@ The webview provides a parallel display of either online or local facsimiles and
 
 <!-- ![webview of [*al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml)](assets/images/boilerplate_muqtabas-1.jpg) -->
 
-{% include image.html url="/assets/images/boilerplate_muqtabas-1.jpg" description="webview of *al-Muqtabas* 6(2)" %}
+{% include image.html url="/assets/images/boilerplate_muqtabas-1.jpg" description="webview of *al-Muqtabas* 6(2)" | prepend: site.baseurl %}
 
 <!-- ![webview of [*al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml) with expanded table of content](assets/images/boilerplate_muqtabas-2.jpg) -->
 
