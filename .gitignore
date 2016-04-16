@@ -7,3 +7,6 @@
 
 .DS_Store
 .gitignore
+_site/
+.jekyll-metadata
+.sass-cache/
