@@ -10,8 +10,8 @@ title: digital muqtabas — الوقتبس الرقمي
 email: grallert@orient-institut.org
 description: >
   A digital edition (TEI XML) of the Arabic monthly journal al-Muqtabas, published by Muḥammad Kurd ʿAlī in Cairo and Damascus between 1906 and 1917/18
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tillgrallert.github.io/" # the base hostname & protocol for your site
+baseurl: "/digital-muqtabas" # the subpath of your site, e.g. /blog
+url: "https://tillgrallert.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
