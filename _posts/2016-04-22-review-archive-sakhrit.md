@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How archive.sakhrit.co rendered shamela's transcription as images"
+title: "Evaluating archive.sakhrit.co as a source for digitsed imagery of Arabic journals: a complete fail"
 author: Till Grallert
 date: 2016-04-22 23:44:55 +0300
 categories:
