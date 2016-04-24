@@ -1,5 +1,5 @@
 <figure class="image {{ include.class }}">
-	{% if include.url contains http %}
+	{% if include.url contains 'http' %}
 	<a href="{{ include.url }}" target="_blank">
     	<img src="{{ include.url}}" alt="{{ include.description }}">
     	<figcaption>{{ include.description }}</figcaption>
