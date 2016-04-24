@@ -16,4 +16,4 @@ tags:
 4. Send us a *pull request*
 5. We will review and merge your changes.
 
-{% include image.html url="../assets/images/github_branches-1.png" description="Branches on GitHub" class=""  %}
+{% include image.html url="/assets/images/github_branches-1.png" description="Branches on GitHub" class=""  %}
