@@ -73,6 +73,7 @@ Facsimiles are linked through the `<facsimile>` child of `<TEI>`:
 - The `@url` of `<graphic>` links to local downloads of the image as well as to the image hosted on HathiTrust and EAP servers.
 
 # 2. Workflow
+
 ## 2.1 Manually place `<pb/>` tags
 
 The tag `<pb/>`, marking a page break in TEI, must be manually placed into the text string:
