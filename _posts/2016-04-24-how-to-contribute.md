@@ -3,7 +3,9 @@ layout: post
 title: "How to contribute to Digital Muqtabas"
 author: Till Grallert
 date: 2016-04-24 22:45:32 +0300
-categories: blog
+categories: 
+- blog
+- workflow
 tags:
 - how to
 - social edition

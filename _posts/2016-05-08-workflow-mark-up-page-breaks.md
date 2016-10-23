@@ -3,6 +3,11 @@ layout: post
 title: "Workflow: Mark-up of page breaks"
 author: Till Grallert
 date: 2016-05-08 18:23:33 +0300
+categories:
+- blog
+- workflow
+- project_dh
+- project_dape
 tags:
 - documentation
 - how to
