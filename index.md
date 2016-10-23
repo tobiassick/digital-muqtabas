@@ -1,12 +1,10 @@
 ---
-layout: page
+layout: default
 title: "about"
 author: Till Grallert
 date: 2016-04-04 01:42:27
 <!-- permalink: /about/ -->
 ---
-
-Quick links: [Webview *al-Muqtabas* 6(1) (text, facsimile)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_60.TEIP5.xml), [Zotero group "Digital Muqtabas" (bibliographic metadata)](https://www.zotero.org/groups/digital-muqtabas/items/)
 
 # Digital *Muqtabas*: An open, collaborative, and scholarly digital edition of Muḥammad Kurd ʿAlī's early Arabic periodical *Majallat al-Muqtabas* (1906--1917/18)
 
@@ -25,7 +23,7 @@ By linking images to the digital text, every reader can validate the quality of 
 
 The purpose and scope of the project is to provide an open, collaborative, referencable, and scholarly digital edition of Muḥammad Kurd ʿAlī's journal *al-Muqtabas*, which includes the full text, semantic mark-up, bibliographic metadata, and digital imagery. All files but the digital facsimiles are hosted on [GitHub](https://www.github.com).
 
-All deliverables and milestones will be covered in more detail in the following sections of this `readme.md`.
+All deliverables and milestones will be covered in more detail in the following sections.
 
 ## 1.1 Deliverables
 
@@ -33,8 +31,8 @@ All deliverables and milestones will be covered in more detail in the following 
     - Full text of 96 issues (c. 7000 pages) with semantic mark-up as TEI P5 XML with its own schema.
     - The text of digital edition links to open-access digital facsimiles if available (see below).
     - [A webview](https://github.com/tillgrallert/tei-boilerplate-arabic-editions), based on [TEI Boilerplate](http://dcl.slis.indiana.edu/teibp/), shows digital text and images side by side. It provides an automatically generated table of content and links to the bibliographic metadata of every article.
-    - Bibliographic metadata for every article in *Majallat al-Muqtabas* is provided as individual BibTeX file in the sub-folder `metadata`. The metadata includes a URL pointing to the webview of this item and the webview includes a link to the BibTeX file for every article.
-        + To ease browsing the journal, we have set up the public Zotero group [Digital Muqtabas](https://www.zotero.org/groups/digital-muqtabas/items). This group is updated by means of the BibTeX files.
+    - Bibliographic metadata for every article in *Majallat al-Muqtabas* is provided as individual MODS and BibTeX files in the sub-folder `metadata`. The metadata includes a URL pointing to the webview of this item and the webview includes a link to the metadata files for every article.
+        + To ease browsing the journal, we have set up the public Zotero group [Digital Muqtabas](https://www.zotero.org/groups/digital-muqtabas/items). This group is updated by means of the MODS XML files.
 - Possible / planned deliverables
     + Scans of issues not currently available in open-access repositories, namely of vol. 9, which we hold at [Orient-Institut Beirut](http://www.orient-institut.org).
 
@@ -195,7 +193,7 @@ The main challenge is to combine the full text and the images in a TEI edition. 
 
 The edition is conceived of as a corpus of TEI files that are grouped by means of XInclude. This way, volumes can be constructed as single TEI files containing a `<group/>` of TEI files and a volume specific `<front/>` and `<back/>`
 
-Detailled description and notes on the mark-up are kept in a separate [file (`documentation_tei-markup`)](documentation_tei-markup.md).
+Detailled description and notes on the mark-up are kept in a separate [file (`documentation_tei-markup.md`)](https://github.com/tillgrallert/digital-muqtabas/blob/master/documentation_tei-markup.md).
 
 ## 4.2 Quality control
 
@@ -223,7 +221,7 @@ The webview provides a parallel display of either online or local facsimiles and
 
 {% include image.html url="/assets/images/boilerplate_muqtabas-2.jpg" description="webview of *al-Muqtabas* 6(2)" %}
 
-A detailed description of the web display is available [here](notes-web-display.md).
+A detailed description of the web display is available [here](https://github.com/tillgrallert/digital-muqtabas/blob/master/notes-web-display.md).
 
 User will, of course, want to search the edition for specific terms and will immediately recognise the lack of a dedicated search field in the webview. But behold, individual issues can be searched through the built-in search function in browsers; just hit `ctrl+f` (windows) or `cmd+f` (macintosh) to search individual periodical issues for literal strings. To search across the entire periodical, there are three instantly available options:
 
@@ -269,7 +267,10 @@ There are, however, a number of problems with the format:
 
 The [MODS standard](http://www.loc.gov/standards/mods/) is expressed in XML and maintained by the [Network Development and MARC Standards Office](http://www.loc.gov/marc/ndmso.html) of the Library of Congress with input from users. Compared to BibTeX MODS has he advantage of being properly standardised, human and machine readable, and much better suited to include all the needed bibliographic information.
 
-I have written an XSLT stylesheet to generate MODS from the TEI source: [`Tei2Mods-issues.xsl`](xslt/Tei2Mods-issues.xsl)
+The repository currently contains two XSLT stylesheets to automatically generate MODS XML files from the TEI source:
+
+1. [`Tei2BibTex-articles.xsl`](xslt/Tei2BibTex-articles.xsl): generates one BibTeX file for each article and section of a periodical issue.
+2. [`Tei2BibTex-issues.xsl`](xslt/Tei2BibTex-issues.xsl): generates one BibTeX file per periodical issue, comprising entries for every article and section.
 
 MODS also serves as the intermediary format for the free [bibutils suite](https://sourceforge.net/projects/bibutils/) of conversions between bibliographic metadata formats (including BibTeX) which is under constant development and released under a GNU/GPL (General Public License). `Tei2Mods-issues.xsl` and `bibutils` provide a means to automatically generate a large number of bibliographic formats to suit the reference manager one is working with; e.g.: 
 
