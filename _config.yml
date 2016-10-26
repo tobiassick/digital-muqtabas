@@ -31,8 +31,9 @@ quiet:    false
 defaults: []
 
 # Markdown settings
-# markdown: kramdown # pandoc
-markdown: redcarpet
+markdown: kramdown # pandoc
+# markdown: redcarpet
+highlighter: rouge
 
 # pagination should work with "paginate: 5"
 
