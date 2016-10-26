@@ -33,7 +33,7 @@ defaults: []
 # Markdown settings
 markdown: kramdown # pandoc
 # markdown: redcarpet
-highlighter: pygments # rouge
+highlighter: rouge
 
 # pagination should work with "paginate: 5"
 
