@@ -62,7 +62,11 @@ The most likely candidates for such follow-up projects are
     1. Basic: BibTeX; *done*
     2. Advanced: MODS; *done*
 6. Presentations to solicit feedback
-    - Leipzig, December : DH Workshop Persian and Arabic 
+    - Leipzig, Germany, December 2015: DH Workshop Persian and Arabic
+    - Cologne, Germany, March 2016: DiXiT Convention 2 <!-- provide link to blog post / programme -->
+    - Cairo, Egypt, April 2016: Webinar at AUC library <!-- provide link to blog post / programme -->
+    - Beirut, Lebanon, May 2016: Conference "Books in Motion" <!-- provide link to blog post / programme -->
+    - Krakow, Poland, August 2016: DH2016 *cancelled (due to parental leave)*
 
 ## 1.3 Timeline / scheduled releases
 
@@ -128,7 +132,8 @@ In addition to the original edition, at least one reprint appeared: In 1992 Dār
 
 [^12]:{Seikaly 1981@128}
 
-# 3. Input: 
+# 3. Input:
+
 ## 3.1 Digital imagery
 
 Image files are available from the [*al-Aqṣā* Mosque's library in Jerusalem through the British Library's "Endangered Archives Project" (vols. 2-7)](http://eap.bl.uk/database/overview_project.a4d?projID=EAP119;r=63), [HathiTrust (vols. 1-6, 8)](http://catalog.hathitrust.org/Record/100658549), and [Institut du Monde Arabe](http://ima.bibalex.org/IMA/presentation/periodic/list.jsf?pid=9C82C139F9785E99D30089727B40A269). Due to its open access licence, preference is given to facsimiles from EAP.
