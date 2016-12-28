@@ -132,7 +132,7 @@ Similar confusion shrouds the end of publication in mystery. As no publication d
 
 ## 2.2 Moving publication between Cairo and Damascus.
 
-After the constitiutional revolution in the Ottoman Empire in July 1908, Muḥammad Kurd ʿAlī moved *al-Muqtabas* from Cairo to Damascus with the publication of No. [4/1](https://rawgit.com/tillgrallert/ArabicTeiEdition/master/MajallatMuqtabas/xml/oclc_4770057679-i_37.TEIP5.xml). <!-- After his initial enthusiasm for the Your Turks' project and the CUP vanished he  --> The final page of no. [7/6](https://rawgit.com/tillgrallert/ArabicTeiEdition/master/MajallatMuqtabas/xml/oclc_4770057679-i_77.TEIP5.xml#div_14.d1e4462) announced a (temporary) move back to Cairo.
+After the constitiutional revolution in the Ottoman Empire in July 1908, Muḥammad Kurd ʿAlī moved *al-Muqtabas* from Cairo to Damascus with the publication of no. [4/1](https://rawgit.com/tillgrallert/ArabicTeiEdition/master/MajallatMuqtabas/xml/oclc_4770057679-i_37.TEIP5.xml). <!-- After his initial enthusiasm for the Your Turks' project and the CUP vanished he  --> The final page of no. [7/6](https://rawgit.com/tillgrallert/ArabicTeiEdition/master/MajallatMuqtabas/xml/oclc_4770057679-i_77.TEIP5.xml#div_14.d1e4462) announced a (temporary) move back to Cairo.
 
 ## 2.3 Known editions
 
