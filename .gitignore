@@ -10,3 +10,7 @@
 _site/
 .jekyll-metadata
 .sass-cache/
+metadata/
+xml/
+tei/
+xslt*/
