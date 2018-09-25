@@ -6,13 +6,13 @@ date: 2017-10-09 14:27:13 +0300
 
 # Digital *Muqtabas*: An open, collaborative, and scholarly digital edition of Muḥammad Kurd ʿAlī's early Arabic periodical *Majallat al-Muqtabas* (1906--1917/18)
 
-[![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg?maxAge=2592000)](https://github.com/tillgrallert/digital-muqtabas/releases)
-[![DOI](https://zenodo.org/badge/45922152.svg?maxAge=2592000)](https://zenodo.org/badge/latestdoi/45922152)
+[![GitHub release](https://img.shields.io/github/release/tillgrallert/digital-muqtabas.svg)](https://github.com/tillgrallert/digital-muqtabas/releases)
+[![DOI](https://zenodo.org/badge/45922152.svg)](https://zenodo.org/badge/latestdoi/45922152)
 
 Quick links: 
 
 - [Blog](https://tillgrallert.github.io/digital-muqtabas), 
-- [Webview *al-Muqtabas* 6(1) (text, facsimile)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_60.TEIP5.xml), 
+- [Webview *al-Muqtabas* 1(1) (text, facsimile)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_1.TEIP5.xml), 
 - [Zotero group "OpenArabicPE/digital-muqtabas" (bibliographic metadata)](https://www.zotero.org/groups/openarabicpe/items/collectionKey/8SINFUW9)
 
 In the context of the current onslaught cultural artifacts in the Middle East face from the iconoclasts of the Islamic State, from the institutional neglect of states and elites, and from poverty and war, digital preservation efforts promise some relief as well as potential counter narratives. They might also be the only resolve for future education and rebuilding efforts once the wars in Syria, Iraq or Yemen come to an end. 
@@ -23,7 +23,7 @@ With the [GitHub-hosted TEI edition of *Majallat al-Muqtabas*](https://github.co
 
 By linking images to the digital text, every reader can validate the quality of the transcription against the original, thus overcoming the greatest limitation of crowd-sourced or gray transcriptions and the main source of disciplinary contempt among historians and scholars of the Middle East. Improvements of the transcription and mark-up can be crowd-sourced with clear attribution of authorship and version control using .git and GitHub's core functionality. Editions will be referencable down to the word level for scholarly citations, annotation layers, as well as web-applications through a documented URI scheme.[^3] The [web-display](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_60.TEIP5.xml) is implemented through a customised adaptation of the [TEI Boilerplate XSLT stylesheets](http://dcl.slis.indiana.edu/teibp/); it can be downloaded, distributed and run locally without any internet connection---a necessity for societies outside the global North. Finally, by sharing all our code (mostly XSLT) in addition to the XML files, we hope to facilitate similar projects and digital editions of further periodicals, namely Rashīd Riḍā's *al-Manār*.
 
-[^3]:Currently we provide stable URLs down to the paragraph level. For more details see the [documentation of the mark-up](documentation_tei-markup.md)
+[^3]:Currently we provide stable URLs down to the paragraph level. For more details see the [documentation of the mark-up](https://github.com/OpenArabicPE/OpenArabicPE_ODD).
 
 
 # 1. Scope and deliverables of the project
@@ -60,7 +60,7 @@ The most likely candidates for such follow-up projects are
 
 1. Design a basic TEI schema; *done*
 2. Import everything from shamela and convert it to TEI XML; *done*
-3. Improve TEI mark-up: The following steps are independent of each other, need to be done on the issue / file level, and can be distributed across different editors. 
+3. Improve TEI mark-up: The following steps are independent of each other, need to be done on the issue / file level, and can be distributed across different editors. Progress is tracked using a public [Trello board](https://trello.com/b/s4q4Ecyb/digital-muqtabas).
     - Bibliographic metadata: volume, issue, page range
     - Basic structural mark-up: sections, articles, heads, authors
     - Page breaks and links to facsimiles
@@ -76,13 +76,13 @@ The most likely candidates for such follow-up projects are
 
 ## 1.3 Timeline / scheduled releases
 
-There is no proper release schedule yet but I conceive of version 1.0 as the first complete edition. 
+There is no proper release schedule but I conceive of version 1.0 as the first complete edition. Progress is tracked using a public [Trello board](https://trello.com/b/s4q4Ecyb/digital-muqtabas).
 
-- version 0.1 shall be the first "official" release. It is scheduled for May/June 2016 and will include
-    1. TEI files of all at least one volume of *al-Muqtabas* (i.e. 12 issues / files) with structural mark-up of mastheads, sections, articles, and with page breaks linked to the facsimiles; for no other reason but interes in their content, we have started work on vol. 5 and 6, which are therefore the most likely release candidates;
+- version 0.1 was the the first "official" release. It was released in February 2017 and included
+    1. TEI files of all at least one volume of *al-Muqtabas* (i.e. 12 issues / files) with structural mark-up of mastheads, sections, articles, and with page breaks linked to the facsimiles; for no other reason but interes in their content, we have started work on vol. 5 and 6, which were therefore the most likely release candidates;
     2. MODS / BibTeX files for all issues, sections, and articles;
-    3. XSLT stylesheets for all necessary initial and periodic conversions;
-    4. XSLT, JS, and CSS for a webview.
+    3. XSLT, JS, and CSS for a webview.
+- versions 0.1.1 - 0.1.x: each completed issue will warant a minor release.
 - versions 0.1 - 0.x: each completed volume of 11 to 12 issues / TEI files will warant an incremental release.
 - version 1.0 shall include
     1. TEI files of all 96 issues of *al-Muqtabas* with structural mark-up of mastheads, sections, articles, and with page breaks linked to the facsimiles;
@@ -101,13 +101,9 @@ Muḥammad Kurd ʿAlī published the monthly journal *al-Muqtabas* between 1906 
 
 There is some confusion as to the counting of issues and their publication dates. Samir Seikaly argues that Muḥammad Kurd ʿAlī was wrong in stating in his memoirs that he had published 8 volumes of 12 issues each and two independent issues.[^1] But the actual hard copies at the [Orient-Institut Beirut](http://www.orient-institut.org) and the digital facsimiles from HathiTrust and EAP show that Kurd ʿAlī was right insofar as volume 9 existed and comprised 2 issues only. As it turns out, *al-Muqtabas* also published a number of double issues: [Vol. 4 no. 5/6](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_41.TEIP5.xml) and [Vol. 8 no. 11/12](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_94.TEIP5.xml).
 
-[^1]:{KurdʿAlī 1928@424}, {Seikaly 1981@128}
-
 According to the masthead and the cover sheet, *al-Muqtabas*'s publication schedule followed the Islamic *hijrī* calendar (from the journal itself it must remain open whether the recorded publication dates were the actual publication dates). Sometimes the printers made errors: [no. 4/2](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_38.TEIP5.xml), for instance, carries Rab I 1327 aH as publication date on the cover sheet, but Ṣaf 1327 aH in its masthead. The latter would correspond to the official publication schedule. External sources, such as reports in the daily newspaper *al-Muqtabas*, also published by Muḥammad Kurd ʿAlī in Damascus, indicate that the actual publication sequence was indeed not too tightly tied to the monthly publication schedule already at the very beginning:
 
 *Thamarāt al-Funūn* 29 Jan. 1906 / 4 Dhu II 1323 aH (#1548) announced the publication of [no.2 of *Majallat al-Muqtabas*](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_2.TEIP5.xml) two months earlier than the date indicated in the issue's masthead: Ṣafar 1324 aH.[^5] This also contradicts Muḥammad Kurd ʿAlī's memoirs, where he states that publication of *Muqtabas* commenced in early 1324 aH.[^11]
-
-[^11]:{KurdʿAlī 1928@415}
 
 By Summer 1909, *al-Muqtabas* was lagging severely behind its publication schedule. [No. 4/7](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_42.TEIP5.xml), scheduled for Rajab 1327 aH (Jul/Aug 1909) was published only in the first week of April 1910 but it took only another week for [No. 4/8](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_43.TEIP5.xml) to appear.[^14] [No. 4/9](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_44.TEIP5.xml) and [4/10](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_45.TEIP5.xml) were then published within another month.[^4] Nevertheless there were still rather late and the publishers acknowledged their failure in keeping with the official publication schedule by omitting the dateline from the masthead with the publication of [No. 4/10](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_45.TEIP5.xml)<!-- , which should have been published in Shawwāl 1327 aH (Oct/Nov 1909) -->. 
 
@@ -122,21 +118,9 @@ Muḥammad Kurd ʿAlī commented on the irregular publication schedule that saw 
 - *al-Muqtabas* 18 Jun. 1911 (#706) advertised Jamāl al-Dīn al-Qāsimī's three-partite article *al-fatwā fī al-islām* ([part one](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml#div_2.d1e1517), [two](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml#div_2.d1e1491), and [three](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_63.TEIP5.xml#div_7.d1e1810)) published in [no. 6/2 (Ṣafar 1329 / Feb 1911)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_61.TEIP5.xml), [6/3](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml), and [6/4](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_63.TEIP5.xml) and mentioned that the copy of *Majallat al-Muqtabas* was sold for 1.5 *beşlik*s.[^10]
 - *al-Muqtabas* 1 Jul. 1911 / 4 Raj 1329 aH (#717) announced the publication of two issues, [no.6/5](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_64.TEIP5.xml) and [6/6](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_65.TEIP5.xml), which according to the publication schedule should have been published in late April and late May respectively.[^2]
 
-[^14]:[{muqtabas 76-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6831;r=10426). It is important to note that an article in [4/2](https://github.com/tillgrallert/digital-muqtabas/blob/master/xml/oclc_4770057679-i_38.TEIP5.xml) scheduled for February/March 1909 was referenced in the newspaper [*al-Quds* #60 of 11 June 1909](http://www.palestine.mei.columbia.edu/alquds-issues/2017/2/21/issue-60).
-[^10]:[{muqtabas 274-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=7029;r=17843)
-[^2]:[{muqtabas 283-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=7038;r=9551)
-[^4]:[{muqtabas 100-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6855;r=6738)
-[^5]:{tf-oib 1548@5}
-[^6]:[{muqtabas 128-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6883;r=18866). See also Muḥammad Kurd ʿAlī's article on the [scientific institutions of Paris](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_47.TEIP5.xml#div_10.d1e3322) in his "Oddities of the West" printed in the same issue that refers to events in early December 1909 as past history.
-[^7]:[{muqtabas 184-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6939;r=1883)
-[^8]:[{muqtabas 188-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6943;r=5230)
-[^9]:[{muqtabas 200-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6955;r=4592). *al-Ḥaqāʾiq* 1(10),  1 Jum I 1329 aH, 17 Nīs 1327 R [30 Apr. 1911]:369-74 replied to an article in this issue of *al-Muqtabas*.
-
 Similar confusion shrouds the end of publication in mystery. As no publication dates were actually provided in the mastheads of individual issues and since the issue wrappers were mostly discarded upon binding the issues into volumes, the only surviving explicit dating is provided by the volumes' cover sheets. According to its covers sheet, volume 8 was published through 1332 aH, i.e. between December 1913 and November 1914. However an [article in issue 9](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_91.TEIP5.xml#p_98.d1e2707) reports on the inauguration of a Mosque in Berlin at the end of Ram 1333 aH (mid-August 1915). The same issue reviews a number of books printed in 1333 aH and [one book published in 1334 aH](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_91.TEIP5.xml#div_24.d1e3028) in addition to the announcement of a publication on the ["first year of the war"](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_91.TEIP5.xml#div_26.d1e3075), which would mean that it was not published before November 1915 (Muḥarram 1334 aH) and most likely in 1916. Issue 12 of the same volume even recorded a [notebook for the year 1917](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_94.TEIP5.xml#p_384.d1e4223) in the section on new books and publications, which also listed further books published in 1334 aH. The following issue continues this trend by publishing an [obituary for Shaykh ʿAbd al-Razzāq al-Bayṭār](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_95.TEIP5.xml#div_16.d1e2869), who died in Damascus on 10 Rab 1335 [4 January 1917].
 
 In addition to the original edition, at least one reprint appeared: In 1992 Dār Ṣādir in Beirut published a facsimile edition that is entirely unmarked as such but for the information on the binding itself. Checking this reprint against the original, it appeared to be a facsimile reprint: pagination, font, layout --- everything is identical. But as Samir Seikaly remarked in 1981 that he used "two separate compilations of *al-Muqtabas* [...] in this study" there must be at least one other print edition that I have not yet seen.[^12]
-
-[^12]:{Seikaly 1981@128}
 
 # 3. Input: 
 ## 3.1 Digital imagery
@@ -265,15 +249,15 @@ A simple way of controlling the quality of the basic structural mark-up would be
 2. Text-image linking: while the links to the facsimiles can be automatically generated for each issue, establishing page breaks (`<pb>`) must be done manually for all 6.000+ of them
 
 
-# 5. Deliverable: A [web display](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_60.TEIP5.xml) adapting TEI Boilerplate
+# 5. Deliverable: A [web display](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_1.TEIP5.xml) adapting TEI Boilerplate
 
 To allow a quick review of the mark-up and read the journal's content, I decided to customise [TEI Boilerplate](http://dcl.slis.indiana.edu/teibp/) for a first display of the TEI files in the browser without need for pre-processed HTML and to host this heavily customised boilerplate view as another [GitHub repository](https://www.github.com/tillgrallert/tei-boilerplate-arabic-editions) to be re-used. 
 
 The webview provides a parallel display of either online or local facsimiles and the text of *al-Muqtabas*. It includes a fully functional table of contents, stable links to all section and article heads, and links to bibliographic metadata for every article. For a first impression see [*al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml). 
 
-![webview of [*al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml)](assets/images/boilerplate_muqtabas-1.jpg)
+![webview of [*al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml)](assets/boilerplate_muqtabas-1.jpg)
 
-![webview of [*al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml) with expanded table of content](assets/images/boilerplate_muqtabas-2.jpg)
+![webview of [*al-Muqtabas* 6(2)](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_62.TEIP5.xml) with expanded table of content](assets/boilerplate_muqtabas-2.jpg)
 
 A detailed description of the web display is available [here](notes-web-display.md).
 
@@ -281,13 +265,13 @@ User will, of course, want to search the edition for specific terms and will imm
 
 - the [GitHub repository](https://github.com/tillgrallert/digital-muqtabas), which allows for browsing and searching and displays search results in context.
 
-![Search the GitHub repository](assets/images/search-github.jpg)
+![Search the GitHub repository](assets/search-github.jpg)
 
 - Google's web search provides a [`site:` operator](https://moz.com/blog/25-killer-combos-for-googles-site-operator) that can be extensively manipulated:
     + [`site:https://github.com/tillgrallert/digital-muqtabas/blob/master search string`](site:https://github.com/tillgrallert/digital-muqtabas/blob/master) will search all files in the Digital Muqtabas repository.
     + add [`filetype:xml`](site:https://github.com/tillgrallert/digital-muqtabas/blob/master filetype:xml) to search only XML files. Other options would be `filetype:md` for plain text markdown files, `filetype.bib` for BibTeX files etc.
 
-![Search Google with the `site:` operator](assets/images/search-google.jpg)
+![Search Google with the `site:` operator](assets/search-google.jpg)
 
 - a public [Zotero group](https://www.zotero.org/groups/digital-muqtabas/items/) comprising bibliographic metadata for all articles and sections, including author names, titles, publication dates, volume and issue numbers etc., including links to the webview.
 
@@ -298,10 +282,10 @@ Bibliographic metadata for every article in Majallat al-Muqtabas is provided in 
 ## 6.1 BibTeX
 
 <!-- Added reference to principles of minimal computing etc.  -->
-[BibTeX](http://www.bibtex.org/Format/) is a plain text format which has been around for more than 30 years and which is widely supported by reference managers. Thus it seems to be a safe bet to preserve and exchange minimal bibliographic data. The repository currently contains two XSLT stylesheets to automatically generate BibTeX files from the TEI source:
+[BibTeX](http://www.bibtex.org/Format/) is a plain text format which has been around for more than 30 years and which is widely supported by reference managers. Thus it seems to be a safe bet to preserve and exchange minimal bibliographic data. OpenArbicPE maintains a number of [XSLT stylesheets to automatically generate BibTeX files](https://github.com/OpenArabicPE/convert_tei-to-bibtex) from the TEI source:
 
-1. [`Tei2BibTex-articles.xsl`](xslt/Tei2BibTex-articles.xsl): generates one BibTeX file for each article and section of a periodical issue.
-2. [`Tei2BibTex-issues.xsl`](xslt/Tei2BibTex-issues.xsl): generates one BibTeX file per periodical issue, comprising entries for every article and section.
+1. `Tei2BibTex-articles.xsl`: generates one BibTeX file for each article and section of a periodical issue.
+2. `Tei2BibTex-issues.xsl`: generates one BibTeX file per periodical issue, comprising entries for every article and section.
 
 
 There are, however, a number of problems with the format:
@@ -317,24 +301,36 @@ There are, however, a number of problems with the format:
 
 The [MODS standard](http://www.loc.gov/standards/mods/) is expressed in XML and maintained by the [Network Development and MARC Standards Office](http://www.loc.gov/marc/ndmso.html) of the Library of Congress with input from users. Compared to BibTeX MODS has he advantage of being properly standardised, human and machine readable, and much better suited to include all the needed bibliographic information.
 
-The repository currently contains two XSLT stylesheets to automatically generate MODS XML files from the TEI source:
+OpenArabicPE maintains a number of [XSLT stylesheets to automatically generate MODS XML files](https://github.com/OpenArabicPE/convert_tei-to-mods) from the TEI source:
 
-1. [`Tei2Mods-articles.xsl`](xslt/Tei2Mods-articles.xsl): generates one MODS file for each article and section of a periodical issue.
-2. [`Tei2Mods-issues.xsl`](xslt/Tei2Mods-issues.xsl): generates one MODS file per periodical issue, comprising entries for every article and section.
+1. `Tei2Mods-articles.xsl`: generates one MODS file for each article and section of a periodical issue.
+2. `Tei2Mods-issues.xsl`: generates one MODS file per periodical issue, comprising entries for every article and section.
 
 MODS also serves as the intermediary format for the free [bibutils suite](https://sourceforge.net/projects/bibutils/) of conversions between bibliographic metadata formats (including BibTeX) which is under constant development and released under a GNU/GPL (General Public License). `Tei2Mods-issues.xsl` and `bibutils` provide a means to automatically generate a large number of bibliographic formats to suit the reference manager one is working with; e.g.: 
 
-- to generate EndNote (refer-format) one only needs the following terminal command: `$xml2end MODS.xml > output_file.end`
-- to generate BibTex: `$xml2bib MODS.xml > output_file.bib`
+- to generate EndNote (refer-format) one only needs the following terminal command: `$ xml2end MODS.xml > output_file.end`
+- to generate BibTex: `$ xml2bib MODS.xml > output_file.bib`
 
 
 ## 6.3 Index by means of a Zotero group
 
-As the webview or reading edition is implemented on the issue level and as we have currently no plans to implement and host a database on the backend, *Digital Muqtabas* needed a way to navigate and browse all articles, authors etc. To this end, we have set up the public [Zotero group "Digital Muqtabas" (bibliographic metadata)](https://www.zotero.org/groups/digital-muqtabas/items/). It can be updated by means of the MODS or BibTeX files. Updating from MODS is the preferred method since it is the more expressive format.
+As the webview or reading edition is implemented on the issue level and as we have currently no plans to implement and host a database on the backend, *Digital Muqtabas* needed a way to navigate and browse all articles, authors etc. To this end, we have set up the public [Zotero group OpenArabicPE](ttps://www.zotero.org/groups/openarabicpe/items/). It can be updated by means of the MODS or BibTeX files. Updating from MODS is the preferred method since it is the more expressive format.
 
 [Zotero groups](https://www.zotero.org/groups) are great way to share bibliographic metadata. Hosted by the Roy Rosenzweig Center for History and Media, they allow for public access to structured bibliographic metadata through a web interface. Of course they also integrate with the free and open-source reference manager [Zotero](https://www.zotero.org). All one needs is a free Zotero account and either the Zotero plug-in for the Firefox and Chrome browsers or the Zotero standalone version for Mac OSX and Linux. One can then join the group and sync all data to the local installation of Zotero, which means that, similar to the webview and all other components of this edition, bibliographic metadata can be browsed and searched through a graphical user interface without a continuous internet connection.
 
 
-
+<!-- NOTES -->
+[^1]:{KurdʿAlī 1928@424}, {Seikaly 1981@128}
+[^2]:[{muqtabas 283-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=7038;r=9551)
+[^4]:[{muqtabas 100-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6855;r=6738)
+[^5]:{tf-oib 1548@5}
+[^6]:[{muqtabas 128-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6883;r=18866). See also Muḥammad Kurd ʿAlī's article on the [scientific institutions of Paris](https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_47.TEIP5.xml#div_10.d1e3322) in his "Oddities of the West" printed in the same issue that refers to events in early December 1909 as past history.
+[^7]:[{muqtabas 184-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6939;r=1883)
+[^8]:[{muqtabas 188-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6943;r=5230)
+[^9]:[{muqtabas 200-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6955;r=4592). *al-Ḥaqāʾiq* 1(10),  1 Jum I 1329 aH, 17 Nīs 1327 R [30 Apr. 1911]:369-74 replied to an article in this issue of *al-Muqtabas*.
+[^10]:[{muqtabas 274-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=7029;r=17843)
+[^11]:{KurdʿAlī 1928@415}
+[^12]:{Seikaly 1981@128}
 [^13]:[Wikipedia](https://en.wikipedia.org/wiki/BibTeX) has a better description than the official website. 
+[^14]:[{muqtabas 76-eap@3}](http://eap.bl.uk/database/overview_item.a4d?catId=6831;r=10426). It is important to note that an article in [4/2](https://github.com/tillgrallert/digital-muqtabas/blob/master/xml/oclc_4770057679-i_38.TEIP5.xml) scheduled for February/March 1909 was referenced in the newspaper [*al-Quds* #60 of 11 June 1909](http://www.palestine.mei.columbia.edu/alquds-issues/2017/2/21/issue-60).
 [^15]: كرد علي, محمد (ed.). 1910. خاتمة السنة الخامسة. المقتبس, 5 (12), p. 800. Available at https://rawgit.com/tillgrallert/digital-muqtabas/master/xml/oclc_4770057679-i_59.TEIP5.xml#div_9.d1e3208 [Accessed April 24, 2016].
